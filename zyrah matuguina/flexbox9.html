@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MatuguinaFlexbox9</title>
+    <style>
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    height: calc(100vh - 8px);
+    gap: 4px;
+}
+
+nav, main, aside, footer {
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.navleft {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.navright {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.redbox {
+    background: red;
+    height: 30px;
+    width: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.asidebox {
+    display: flex;
+    border: 1px solid black;
+    width: 15vw;
+    height: 5vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    align-items: center;
+    padding: 4px;
+    row-gap: 25px;
+}
+
+.bigbox {
+    border: 1px solid black;
+    height: 130px;
+    width: 167vh;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 4px;
+    align-items: center;
+}
+
+.footerboxleft {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footerboxright {
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+.footerbox {
+    background: red;
+    height: 20px;
+    width: 30px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="navright">
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <aside>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </aside>
+        <div class="content2">
+            <main>
+                <div class="bigbox"></div>
+                <div class="bigbox"></div>
+            </main>
+            <footer>
+                <div class="footerboxleft">
+                    <div class="redbox"></div>
+                    <div class="footertext">
+                        <div>FLEXBOX</div>
+                        <div>COPYRIGHT FLEXBOX</div>
+                    </div>
+                </div>
+        
+                <div class="footerboxright">
+                    <div class="footerbox"></div>
+                    <div class="footerbox"></div>
+                    <div class="footerbox"></div>
+                    <div class="footerbox"></div>
+                    <div class="footerbox"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
